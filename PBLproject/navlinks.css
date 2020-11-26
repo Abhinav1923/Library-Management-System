@@ -1,0 +1,142 @@
+* {
+  margin-left: 0px;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+  -webkit-user-select: none;
+}
+
+h1 {
+  /* text-align: center; */
+  margin: 30px 0px 50px 50px;
+  font-weight: 600;
+  font-size: 56px;
+  color: #20897b;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  width: fit-content;
+  /* text-underline-position: under; */
+}
+
+h2 {
+  color: #20897b;
+  font-size: 36px;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  color: #20897b;
+  font-size: 26px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  color: #1880b1;
+  font-size: 20px;
+  margin: 5px 0px 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.unitbox {
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  transition: box-shadow 0.25s;
+  color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  text-align: left;
+  border-radius: 15px;
+  width: 90vw;
+  /* height: 20vh; */
+}
+
+.unitbox a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+ul + hr {
+  margin: 0px 10px 0px 10px;
+  width: 100%;
+  border-top: 2px solid rgba(199, 195, 195, 0.5);
+}
+
+h3 + img {
+  width: 100px;
+  height: 137px;
+  margin-left: 60px;
+}
+
+ul li a {
+  /* margin: 50px 60px; */
+  font-size: 20px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #1880b1;
+}
+
+a:hover {
+  color: #204589;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #20897b;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+hr {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.syllabus span {
+  white-space: nowrap;
+}
+
+span {
+  font-weight: 600;
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 1s infinite linear;
+  -webkit-animation: hue 1s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}

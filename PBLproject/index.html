@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ITM GOI - Library</title>
+    <!-- <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://image.flaticon.com/icons/svg/3145/3145444.svg"
+      sizes="30x30"
+    /> -->
+    <link rel="shortcut icon" href="https://lms.itmgoi.in/theme/image.php/eguru/theme/1602266674/favicon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="events.css" />
+    <link rel="stylesheet" href="Ad-banner.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Montserrat:wght@100;200;300;400;500&family=Nunito:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="-header-container">
+        <nav>
+          <div class="nav-brand">
+            <a href="index.html">
+              <img src="images/unnamed1.png" alt="ITM GOI" />
+            </a>
+          </div>
+          <div class="menu-icons open">
+            <i class="icon fa fa-bars"></i>
+          </div>
+          <ul class="nav-list">
+            <div class="menu-icons close">
+              <i class="icon fa fa-times"></i>
+            </div>
+            <li class="nav-item">
+              <a href="#!" class="nav-link current">Home</a>
+               <ul class="nav-dropdown">
+                  <li>
+                    <a href="#services" >Services</a>
+                  </li>
+                  <li>
+                    <a href="#popular-books" >Popular Books</a>
+                  </li>
+                  <li>
+                    <a href="#about" >About Us</a>
+                  </li>
+                </ul>      
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Students</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="students/year1.html" add target="_blank">1st Year</a>
+                  </li>
+                  <li>
+                    <a href="students/year2.html" add target="_blank">2nd Year</a>
+                  </li>
+                  <li>
+                    <a href="students/year3.html" add target="_blank">3rd year</a>
+                  </li>
+                  <li>
+                    <a href="students/year4.html" add target="_blank">4th Year</a>
+                  </li>
+                </ul>              
+            </li>
+            <li class="nav-item">
+              <a href="#events" class="nav-link">Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Extras</a>
+              <ul class="nav-dropdown">
+                  <li>
+                    <a href="Extras/competitive.html" add target="_blank">Competitive Books</a>
+                  </li>
+                  <li>
+                    <a href="Extras/newspaper.html" add target="_blank">Newspapers</a>
+                  </li>
+                  <li>
+                    <a href="Extras/novel.html" add target="_blank">Novels</a>
+                  </li>
+                  <li>
+                    <a href="Extras/magazines.html" add target="_blank">Magazines</a>
+                  </li>
+                </ul>         
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========================== end of header===================== -->
+    <section class="home" id="home">
+      <div class="container">
+        <h2 class="">Welcome To</h2>
+        <h1 class="main-head">
+          Akshardham Central <br />
+          Library
+        </h1>
+        <p class="main-para">
+          <span>"ONLINE</span> on Demand Library Service for Reader"
+        </p>
+        <div class="separation-line">
+          <i class="fa fa-stop"></i>
+          <i class="fa fa-stop"></i>
+        </div>
+
+        <div id="tabs" class="search-box">
+          <ul class="search-by tab" style="justify-content: center">
+            <li>
+              <a
+                href="#"
+                class="tablinks"
+                onclick="opensearch(event, 'Publisher')"
+                >Publisher</a
+              >
+            </li>
+            <li>
+              <a href="#" class="tablinks" onclick="opensearch(event, 'Book')">
+                Book</a
+              >
+            </li>
+            <li>
+              <a href="#" class="tablinks" onclick="opensearch(event, 'Author')"
+                >Author</a
+              >
+            </li>
+          </ul>
+          <hr />
+          <div id="Book" class="tabcontent form-control" style="display: block">
+            <form action="#">
+              <input
+                type="search"
+                name="search"
+                id="dekh lo apne hisaab se"
+                placeholder="Enter book name"
+              />
+              <i class="fa fa-search"></i>
+            </form>
+          </div>
+          <div id="Author" class="tabcontent form-control">
+            <form action="#">
+              <input
+                type="search"
+                name="search"
+                id="dekh lo apne hisaab se"
+                placeholder="Enter author name"
+              />
+              <i class="fa fa-search"></i>
+            </form>
+          </div>
+          <div id="Publisher" class="tabcontent form-control">
+            <form action="#">
+              <input
+                type="search"
+                name="search"
+                id="dekh lo apne hisaab se"
+                placeholder="Enter publisher name"
+              />
+              <i class="fa fa-search"></i>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================== Ad ====================================== -->
+
+        <div class="container-ad">
+      <div id="slider1">
+        <input type="radio" name="slider" id="s1" checked />
+        <input type="radio" name="slider" id="s2" />
+        <input type="radio" name="slider" id="s3" />
+        <input type="radio" name="slider" id="s4" />
+        <input type="radio" name="slider" id="s5" />
+        <label for="s1" id="slide1"></label>
+        <label for="s2" id="slide2"></label>
+        <label for="s3" id="slide3"></label>
+        <label for="s4" id="slide4"></label>
+        <label for="s5" id="slide5"></label>
+      </div>
+    </div>
+
+    <!-- ===================================== Services section============================= -->
+
+    <section class="category" id="services">
+      <div class="abt-container">
+        <div class="abt-head">
+          <h2><span><b style="font-weight: 800; font-size: 45px;">S</b>ervices</span></h2>
+          <div class="separation-line">
+            <i class="fa fa-stop"></i>
+            <i class="fa fa-stop"></i>
+          </div>
+          <p>
+            Library provides uncompromising information
+            and intellectual requirements to its students and faculty with a
+            user-friendly approach. It offers a fully integrated and dynamic
+            environment for conducting academic study. Multiple copies of text
+            books ensure that resources are easily available in Reference
+            Section and Stock Section. Besides, it provides Lending of books and
+            journal back volumes, photocopying, CD/DVD and Internet services,
+            etc.
+          </p>
+        </div>
+        <div class="category-body">
+          <div class="radiogroup animate-top">
+            <div class="icon-box"><i class="fas fa-id-card-alt"></i></div>
+            <div class="separation-line">
+              <i class="fa fa-stop"></i>
+              <i class="fa fa-stop"></i>
+            </div>
+            <span style="font-weight: 500;">Student library card</span>
+          </div>
+          <div class="radiogroup animate-bottom">
+            <div class="icon-box"><i class="fa fa-file-pdf"></i></div>
+            <div class="separation-line">
+              <i class="fa fa-stop"></i>
+              <i class="fa fa-stop"></i>
+            </div>
+            <span style="font-weight: 500;">PDF Formate</span>
+          </div>
+          <div class="radiogroup animate-top">
+            <div class="icon-box"><i class="fas fa-book-reader"></i></div>
+
+            <div class="separation-line">
+              <i class="fa fa-stop"></i>
+              <i class="fa fa-stop"></i>
+            </div>
+            <span style="font-weight: 500;">Free All Books</span>
+          </div>
+          <div class="radiogroup animate-bottom">
+            <div class="icon-box"><i class="fas fa-check-circle"></i></div>
+            <div class="separation-line">
+              <i class="fa fa-stop"></i>
+              <i class="fa fa-stop"></i>
+            </div>
+            <span style="font-weight: 500;">Up to Date Books</span>
+          </div>
+          <div class="btn"><a href="#" class="cat-btn">See more</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!--- =================================== Popular book============================================== -->
+
+    <section class="recent-books" id="popular-books">
+      <div class="wrapper">
+        <div class="left-col">
+          <div class="content animate-left">
+            <h2><span style="font-weight: 200;">Popular</span> Books</h2>
+            <p>
+              Here, we provide provide some popular books, which student most likely to read.
+              We, constantly update new books according to your demand.
+            </p>
+            <button type="button">Learn more</button>
+          </div>
+        </div>
+        <div class="right-col">
+          <div class="slider animate-top">
+            <img
+              style="object-fit: cover"
+              src="images/book2.jpg"
+              alt="slider"
+              id="slide"
+            />
+          </div>
+          <div class="slider-content animate-bottom">
+            <h2 class="book_name"> C Programming Absolute Beginner's Guide</h2>
+            <h3 class="author_name">Greg Perry and Dean Miller</h3>
+            <hr />
+            <p class="discreption">
+              The book is a fast way to get into the comfort zone with C language, with step by step instructions. Discussing the core concepts of C programming along with concise examples to help you understand better. 
+            </p>
+            <div class="controller">
+              <i
+                id="BackBtn"
+                class="fa fa-chevron-circle-left"
+                aria-hidden="true"
+              ></i>
+              <div class="verticle-line"></div>
+              <i
+                id="NextBtn"
+                class="fa fa-chevron-circle-right"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================swiper===================== -->
+
+    <!-- ====================================swiper===================== -->
+    <!-- ======================================== Events ================================= -->
+
+    <div class="container-events" id="events">
+      <h2><span style="font-weight: 800;">E</span>vents</h2>
+      <div class="separation-line">
+            <i class="fa fa-stop"></i>
+            <i class="fa fa-stop"></i>
+          </div>
+      <div class="container2">
+        <div class="card-media">
+          <!-- media container -->
+          <div class="card-media-object-container">
+            <div
+              class="card-media-object"
+              style="
+                background-image: url('images/slide6.jpg');
+                background-size: contain;
+              "
+            ></div><span class="card-media-object-tag subtle">Coming soon</span>
+            <ul class="card-media-object-social-list">
+        <li>
+          <img src="https://s10.postimg.cc/3rjjbzcvd/profile_f.jpg" class="">
+        </li>
+        <li>
+          <img src="https://s16.postimg.cc/b0j0djh79/profile_0_f.jpg" class="">
+        </li>
+        <li class="card-media-object-social-list-item-additional">
+          <span>+2</span>
+        </li>
+      </ul>
+          </div>
+          <!-- body container -->
+          <div class="card-media-body">
+            <div class="card-media-body-top">
+              <span class="subtle"><b>Mon, OCT 12, 5:00 PM</b></span>
+              <!-- <div class="card-media-body-top-icons u-float-right">
+                <img src="/images/itm-logo.png" style="width: 100px;"> 
+              </div> -->
+            </div>
+            <span class="card-media-body-heading"
+              ><b>डॉ. राममनोहर लोहिया स्मृति व्याख्यान-6</b></span
+            >
+            <div>विषय: भारत, मिली जुली संस्कृति और भारतीयता</div>
+             <div style="font-size: 11px;">
+              <a href="https://www.facebook.com/ITMUNIVERSITYINDIA/">https://www.facebook.com/ITMUNIVERSITYINDIA/</a></div>
+            <div class="card-media-body-supporting-bottom">
+              <span class="card-media-body-supporting-bottom-text subtle"
+                >ITM GOI, Gwalior, (M.P.)</span
+              >
+            </div>
+            <div
+              class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal"
+            >
+              <span class="card-media-body-supporting-bottom-text subtle"
+                >#Knowlege #History</span
+              >
+              <a
+                href="#/"
+                class="card-media-body-supporting-bottom-text card-media-link u-float-right"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card-media">
+          <!-- media container -->
+          <div class="card-media-object-container">
+            <div
+              class="card-media-object"
+              style="
+                background-image: url('images/slide8.jpg');
+                background-size: contain;
+                /* background-repeat: no-repeat; */
+              "
+            ></div>
+            <ul class="card-media-object-social-list">
+        <li>
+          <img src="https://s10.postimg.cc/3rjjbzcvd/profile_f.jpg" class="">
+        </li>
+        <li>
+          <img src="https://s16.postimg.cc/b0j0djh79/profile_0_f.jpg" class="">
+        </li>
+        <li class="card-media-object-social-list-item-additional">
+          <span>+2</span>
+        </li>
+      </ul>
+          </div>
+          <!-- body container -->
+          <div class="card-media-body">
+            <div class="card-media-body-top">
+              <span class="subtle"><b>Mon, SEP 28, 11:00 AM</b></span>
+            </div>
+            <span class="card-media-body-heading"
+              ><b>FLIP THE ROLE - A UNIQUE ACTIVITY</b></span
+            ><div>For B.Tech second &amp; Third year and MBA Final year students</div>
+            <div style="font-size: 12px; color: rgba(0, 0, 0, 0.8);">More details are available in co-curricular section  of home page of TATTVA</div>
+            <div class="card-media-body-supporting-bottom">
+              <span class="card-media-body-supporting-bottom-text subtle"
+                >ITM GOI, Gwalior, (M.P.)</span
+              >
+            </div>
+            <div
+              class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal"
+            >
+              <span class="card-media-body-supporting-bottom-text subtle"
+                >#Presenttion #Performance</span
+              >
+              <a
+                href="#/"
+                class="card-media-body-supporting-bottom-text card-media-link u-float-right"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================== -->
+
+    <!-- ===========================================about================================ -->
+    <section id="about" class="about">
+      <div class="abt-container">
+        <div class="abt-head">
+          <h2>About <span>Us</span></h2>
+          <div class="separation-line">
+            <i class="fa fa-stop"></i>
+            <i class="fa fa-stop"></i>
+          </div>
+         <p>
+            1. ITM is one of the best engineering college libraries among
+            engineering college in the state. It started its function with a
+            vision to serve the students and faculty with information needed for
+            them. It mainly holds books related to engineering and allied
+            subjects. The ITM established its library in the year 1997. The
+            library collection is more than lakh volumes. The library has rich
+            collection of Reference & Text Books, Dictionaries, Yearbooks,
+            Encyclopedias, General books, and Fiction & novels. The library has
+            also subscribing for National & International Journals, General &
+            Technical Magazines.<br><br></li>2. Library has adopted open access system, and maintains OPAC
+            for catering to the needs of the students and faculty.<br><br> 3. Digital
+            Library with multimedia facility (30 Systems) accesses the
+            e-Journals, e-books, NPTEL videos and other Online education
+            materials. Library is fully computerized using Soul Software.
+            Students and staffs can access the library resources by sitting at
+            home visiting the Online LMS.
+             </p>
+        </div>
+
+        <div class="abt-body">
+          <!-- <div class="col-left animate-left">
+            <div class="abt-card">
+              <div class="abt-title-bar">
+                <i class="fa fa-database" aria-hidden="true"></i><span></span>
+              </div>
+              <h2>Databases</h2>
+              <p>
+                Browse collections of articles, books, and more.
+              </p>
+            </div>
+            <div class="abt-card">
+              <div class="abt-title-bar">
+                <i class="fa fa-archive" aria-hidden="true"></i><span></span>
+              </div>
+              <h2>Course Reserves</h2>
+              <p>
+                Search for materials assigned for courses.
+              </p>
+            </div>
+            <div class="abt-card">
+              <div class="abt-title-bar">
+               <i class="fa fa-user" aria-hidden="true"></i><span></span>
+              </div>
+              <h2>Ask a Librarian</h2>
+              <p>
+              Get help for any question from anywhere.
+              </p>
+            </div>
+            <div class="abt-card">
+              <div class="abt-title-bar">
+                <i class="fa fa-bookmark"></i><span></span>
+              </div>
+              <h2>Research Guides</h2>
+              <p>
+                Resources for general and discipline-specific topics.
+              </p>
+            </div>
+          </div> -->
+          <!-- <div class="col-right animate-right">
+            <div class="content-slider">
+              <div class="slider">
+                <div class="mask">
+                  <ul>
+                    <li class="anim1">
+                      <div class="quote">
+                        <img src="images/6.jpg" alt="img" />
+                      </div>
+                    </li>
+                    <li class="anim2">
+                      <div class="quote">
+                        <img src="images/7.png" alt="img" />
+                      </div>
+                    </li>
+                    <li class="anim3">
+                      <div class="quote">
+                        <img src="images/3.jpg" alt="img" />
+                      </div>
+                    </li>
+                    <li class="anim4">
+                      <div class="quote">
+                        <img src="images/4.jpg" alt="img" />
+                      </div>
+                    </li>
+                    <li class="anim5">
+                      <div class="quote">
+                        <img src="images/5.png" alt="img" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> -->
+           <!-- <div class="about-carousal"></div>
+    <script>
+      let currentIndex = 1;
+      let timer;
+
+      const carousal = {
+        init: function (object) {
+          const { el, banners, interval } = object;
+
+          const length = banners.length;
+          if (length === 1) {
+            banners.push(banners[0]);
+            banners.push(banners[0]);
+          }
+          if (length === 2) {
+            banners.push(banners[0]);
+          }
+          this._render(el, banners);
+          timer = setInterval(this._next.bind(this), interval);
+          this.listenPaginationTouch.apply(this);
+        },
+
+        _render: function (el, banners) {
+          const imgUl = document.createElement("div");
+          imgUl.className = "banner-list";
+          let imgUlInnerHTML = "";
+
+          const paginationBox = document.createElement("div");
+          paginationBox.className = "pagination-box";
+          let paginationBoxInnerHTML = "";
+
+          banners.forEach((item, index) => {
+            imgUlInnerHTML += `<div class="banner-item ${
+              index === 0 ? "banner-item-prev" : ""
+            } ${index === 1 ? "banner-item-current" : ""} ${
+              index === 2 ? "banner-item-next" : ""
+            } ${index > 2 ? "banner-item-out" : ""}"><img src="${
+              item.imageUrl
+            }"></div>`;
+
+            paginationBoxInnerHTML += `<div class="pagination-item index-${index} ${
+              index === currentIndex ? "active" : ""
+            }"></div>`;
+          });
+          imgUl.innerHTML = imgUlInnerHTML;
+          paginationBox.innerHTML = paginationBoxInnerHTML;
+          el.appendChild(imgUl);
+          el.appendChild(paginationBox);
+        },
+
+        _next: function () {
+          let bannerList = document.querySelectorAll(".banner-item");
+          let length = bannerList.length;
+          currentIndex = (currentIndex + 1) % length;
+          this._changeNextOrder(currentIndex);
+          this._renderPagination(currentIndex);
+        },
+
+        _changeNextOrder: function (_currentIndex) {
+          let bannerList = document.querySelectorAll(".banner-item");
+          let length = bannerList.length;
+
+          bannerList.forEach((item, index) => {
+            if (index === _currentIndex) {
+              item.className = "banner-item banner-item-current";
+            } else if (index === (_currentIndex - 1 + length) % length) {
+              item.className = "banner-item banner-item-prev";
+            } else if (index === (_currentIndex + 1) % length) {
+              item.className = "banner-item banner-item-next";
+            } else {
+              item.className = "banner-item banner-item-out";
+            }
+          });
+        },
+
+        _renderPagination: function (_currentIndex) {
+          let paginationList = document.querySelectorAll(".pagination-item");
+          paginationList.forEach((item, index) => {
+            if (index === _currentIndex) {
+              item.classList.add("active");
+            } else {
+              item.classList.remove("active");
+            }
+          });
+        },
+
+        listenPaginationTouch: function () {
+          let paginationBox = document.querySelector(".pagination-box");
+          paginationBox.addEventListener("click", (event) => {
+            const target = event.target;
+            if (target.classList.contains("pagination-item")) {
+              try {
+                let className = target.classList[1];
+                let index = Number(className.split("-")[1]);
+                this._changeNextOrder(index);
+                this._renderPagination(index);
+                currentIndex = index;
+                clearInterval(timer);
+                timer = setInterval(this._next.bind(this), 5000);
+              } catch (error) {
+                throw new Error(error);
+              }
+            }
+          });
+        },
+      };
+
+      const carousalDom = document.querySelector(".about-carousal");
+      const banners = [
+        {
+          imageUrl:
+            "http://p1.music.126.net/nHJXJZVMsSpi3v1ee8B8XA==/109951163797188493.jpg",
+        },
+        {
+          imageUrl:
+            "http://p1.music.126.net/iCrkUC8x7ViQwLULtgqkqw==/109951163797194143.jpg",
+        },
+        {
+          imageUrl:
+            "http://p1.music.126.net/2Jih8vXjnTeIzxtPU-gQiw==/109951163797164224.jpg",
+        },
+        {
+          imageUrl:
+            "http://p1.music.126.net/c1OhLIjnd9zB8NBUc3Olqg==/109951163797172654.jpg",
+        },
+        {
+          imageUrl:
+            "http://p1.music.126.net/SWjJnQTGa6vhBOzKrkR6wA==/109951163797179161.jpg",
+        },
+        {
+          imageUrl:
+            "http://p1.music.126.net/Wa9ENrBphVjH46A6Kt8yiA==/109951163797159700.jpg",
+        },
+      ];
+      carousal.init({
+        el: carousalDom,
+        banners,
+        interval: 3000,
+      });
+    </script> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================footer================================== -->
+
+    <footer id="contact">
+      <div class="footer-abt animate-left">
+        <div class="logo">
+          <a href="imdex.html"><img src="images/oie_png.png" alt="logo" style="margin-bottom: 5px;"/></a>
+        </div>
+        <p>
+          To develop the institute into a centre of excellence in education, research, training and consultancy to the extent that it becomes a significant player in the technical and overall development of the country.
+        </p>
+        <div class="separation-line">
+          <i class="fa fa-stop"></i>
+          <i class="fa fa-stop"></i>
+          <i class="fa fa-stop"></i>
+        </div>
+        <ul class="share-section">
+          <li>
+            <a href="https://www.facebook.com/ITMGOIGWALIOR/"
+              ><i class="fab fa-facebook-square" aria-hidden="true"></i
+            ></a>
+          </li>
+          <!-- <li>
+            <a href="https://www.youtube.com/user/ITMUNIVERSITY"><i class="fa fa-youtube" aria-hidden="true"></i></i></a>
+          </li> -->
+          <li>
+            <a href="https://twitter.com/ITMUniversity"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="footer-contact">
+        <h2>Contant Us</h2>
+        <div class="separation-line">
+        </div>
+        <div class="address">
+          <i class="fa fa-map-marker"></i
+          ><span>
+            <b style="letter-spacing: 1px;">Address :</b> ITM Campus, Opp. Sithouli Railway Station, NH-75
+            Sithouli, Jhansi Road, Gwalior - 474001, ( M.P. ), INDIA</span
+          >
+        </div>
+        <div class="mail">
+          <i class="fa fa-envelope"></i
+          ><span><b style="letter-spacing: 1px;">E-mail :</b><a class="mail-link" href="mailto:admission@itmgoi.in"> admission@itmgoi.in</a></span>
+        </div>
+        <div class="phone">
+          <i class="fa fa-phone"></i><span><b style="letter-spacing: 1px;">Phone :</b> +91-751-2440058</span>
+        </div>
+        <div class="webpage">
+          <i class="fa fa-globe" aria-hidden="true"></i><span><b style="letter-spacing: 1px;">Website : </b><a href="http://itmgoi.in"/>itmgoi.in</a> </span>
+        </div>
+      </div>
+      <div class="footer-links animate-right">
+        <h2>Useful Link</h2>
+        <div class="separation-line" style="margin: 10px auto;">
+        </div>
+        <ul>
+          <li><a href="http://itmgoi.in/mission_vision.php">Costumer Service</a></li>
+          <li><a href="http://itmgoi.in/contact_more.php#">Privacy Policy</a></li>
+          <!-- <li><a href="">Forum</a></li> -->
+          <li><a href="">Staff Profile</a></li>
+          <!-- <li><a href="">Live Chat</a></li> -->
+        </ul>
+      </div>
+    </footer>
+    <div class="container-copyright">
+      <p>Copyright © 2020 - Design & Developed by- Abhinav Gupta, Abhishek Shivhare, Abhishek Jha, Amit Kushwaha - ITM GOI Gwalior</p>
+    </div>
+    
+
+    <!-- ====================================script===================================== -->
+    <script>
+      // ==============about slider====
+      function opensearch(evt, searchBy) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(searchBy).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // ==================recent slider==============
+
+      const selectElement = (s) => document.querySelector(s);
+      // open the menu===============
+      selectElement(".open").addEventListener("click", () => {
+        selectElement(".nav-list").classList.add("active");
+      });
+      // close the menu===============
+      selectElement(".close").addEventListener("click", () => {
+        selectElement(".nav-list").classList.remove("active");
+      });
+    </script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+      // scroll reveal=======
+
+      window.sr = ScrollReveal();
+
+      sr.reveal(".animate-left", {
+        origin: "left",
+        duration: 800,
+        distance: "25rem",
+        delay: 200,
+        easing: "ease-in-out",
+      });
+      sr.reveal(".animate-right", {
+        origin: "right",
+        duration: 800,
+        distance: "25rem",
+        delay: 200,
+        easing: "ease-in-out",
+      });
+      sr.reveal(".animate-top", {
+        origin: "top",
+        duration: 800,
+        distance: "25rem",
+        delay: 200,
+        easing: "ease-in-out",
+      });
+      sr.reveal(".animate-bottom", {
+        origin: "bottom",
+        duration: 800,
+        distance: "25rem",
+        delay: 200,
+        easing: "ease-in-out",
+      });
+    </script>
+    <!-- =================swiper======= -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <!-- Top Scroll -->
+        <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;"><i class="icofont icofont-long-arrow-up"></i>
+   <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    <!-- //////////////////////////////////////////////////////////////////////////////////// -->
+
+    <script>
+      (function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+    </script>
+
+
+  </body>
+</html>
